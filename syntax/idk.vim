@@ -7,3 +7,5 @@ endif
 
 " Keywords
 syn keyword basicLanguageKeywords fn if elif else return
+
+let b:current_syntax=idk
