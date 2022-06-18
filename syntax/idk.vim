@@ -1,11 +1,17 @@
 " Language: idk
 " Maintainer: HicaroD
 
-if exists("b:current_syntax")
+if version < 600
+  syntax clear
+elseif exists("b:current_syntax")
   finish
 endif
 
 " Keywords
-syn keyword basicLanguageKeywords fn if elif else return
+syn keyword idkStatement fn if elif else return for while import
+syn keyword idkBoolean true false
 
-let b:current_syntax=idk
+hi link idkStatement Statement
+hi link idkBoolean Boolean
+
+let b:current_syntax="idk"
