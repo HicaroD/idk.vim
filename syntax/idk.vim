@@ -7,13 +7,15 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syn keyword idkStatement fn if elif else return for while import
+syn keyword idkStatement fn if elif else return for while
+syn keyword idkImport import
 syn keyword idkBoolean true false
 syn keyword idkType bool float int
 syn keyword idkTODO TODO FIXME XXX
 
 hi link idkStatement Statement
 hi link idkBoolean Boolean
+hi link idkImport Include
 hi link idkType Type
 hi link idkTODO TODO
 
