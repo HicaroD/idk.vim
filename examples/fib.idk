@@ -1,2 +1,7 @@
-fn main(): int {
+fn fib(int n): int {
+    if n > 1 {
+	return n * fib(n - 1);
+    } else {
+	return 1;
+    }
 }
